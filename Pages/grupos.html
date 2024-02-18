@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/alumnos.css">
+    <title>Grupos</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="./alumnos.html">Alumnos</a></li>
+                <li><a href="./clases.html">Clases</a></li>
+                <li><a href="./calificaciones.html">Calificaciones</a></li>
+                <li><a class="selected" href="./grupos.html">Grupos</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Administración de Grupos</h1>
+  
+  <form id="grupo-form">
+    <label for="nombre">Nombre del Grupo:</label>
+    <input type="text" id="nombre" required><br>
+    <button type="submit">Crear Grupo</button>
+  </form>
+
+  <div id="grupos-list"></div>
+
+  <h2>Asignar Alumnos a un Grupo:</h2>
+  <form id="asignacion-form">
+    <label for="grupo-select">Seleccionar Grupo:</label>
+    <select id="grupo-select" required>
+      <!-- Grupos serán cargados por JavaScript -->
+    </select><br>
+    <label for="alumno-select">Seleccionar Alumno:</label>
+    <select id="alumno-select" required>
+      <!-- Alumnos serán cargados por JavaScript -->
+    </select><br>
+    <button type="submit">Asignar Alumno</button>
+  </form>
+
+</div>
+<script src="../scripts/grupos.js"></script>
+</body>
+</html>

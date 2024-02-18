@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/alumnos.css">
+    <title>Alumnos</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a class="selected" href="./alumnos.html">Alumnos</a></li>
+                <li><a href="./clases.html">Clases</a></li>
+                <li><a href="./calificaciones.html">Calificaciones</a></li>
+                <li><a href="./grupos.html">Grupos</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Modulo de Alumnos</h1>
+
+        <h2>Registro de Alumnos</h2>
+
+        <form id="alumno-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required><br>
+
+            <button type="submit">Guardar Alumno</button>
+        </form>
+
+        <div id="alumnos-list"></div>
+
+        <div id="search-section">
+            <label for="search-input">Buscar Alumno:</label>
+            <input type="text" id="search-input">
+          </div>
+    </div>
+    <script src="../scripts/db.js"></script>
+</body>
+
+</html>

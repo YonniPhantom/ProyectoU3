@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <link rel="stylesheet" href="../styles/alumnos.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="./alumnos.html">Alumnos</a></li>
+                <li><a class="selected" href="./clases.html">Clases</a></li>
+                <li><a href="./calificaciones.html">Calificaciones</a></li>
+                <li><a href="./grupos.html">Grupos</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Gestión de Materias</h1>
+
+        <h2>Dar de alta materia:</h2>
+        <form id="materia-form">
+            <input type="text" id="materia" placeholder="Nombre de la materia" required>
+            <button type="submit">Guardar Materia</button>
+        </form>
+
+        <div id="materias-list"></div>
+
+        <h2>Inscribir alumno en materia:</h2>
+        <form id="inscripcion-form">
+            <label for="alumno-select">Seleccionar Alumno:</label>
+            <select id="alumno-select" required>
+                <!-- Alumnos serán cargados por JavaScript -->
+            </select><br>
+            <label for="materia-select">Seleccionar Materia:</label>
+            <select id="materia-select" required>
+                <!-- Materias serán cargadas por JavaScript -->
+            </select><br>
+            <button type="submit">Inscribir Alumno</button>
+        </form>
+
+    </div>
+    <script src="../scripts/materias.js"></script>
+</body>
+
+</html>
